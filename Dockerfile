@@ -1,4 +1,4 @@
-From centos:stream
+From centos:7
 MAINTAINER avishek.8016293999@gmail.com
 RUN yum install -y httpd \
   zip \
