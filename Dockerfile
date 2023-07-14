@@ -8,5 +8,5 @@ WORKDIR /var/www/html
 RUN unzip loxury.zip
 RUN cp -rvf loxury.zip
 RUN rm -rf loxury loxury.zip
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+CMD ["/usr/local/apache2/htdocs/", "-D", "FOREGROUND"]
 EXPOSE 80
