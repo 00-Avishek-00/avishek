@@ -1,4 +1,4 @@
-From centos:latest
+From centos:stream
 MAINTAINER avishek.8016293999@gmail.com
 RUN yum install -y httpd \
   zip \
@@ -8,5 +8,5 @@ WORKDIR /var/www/html
 RUN unzip loxury.zip
 RUN cp -rvf loxury.zip
 RUN rm -rf loxury loxury.zip
-CMD ["/usr/local/apache2/htdocs/", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
