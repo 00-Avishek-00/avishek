@@ -13,6 +13,3 @@ RUN unzip loxury.zip
 RUN cp -rvf loxury/* .
 RUN rm -rf loxury loxury.zip
 
-# Start Apache HTTP server
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-EXPOSE 80
